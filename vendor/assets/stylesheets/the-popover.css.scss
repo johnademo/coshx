@@ -1,0 +1,146 @@
+.the-tooltip {
+  position: relative;
+}
+.the-tooltip :focus + :last-child, .the-tooltip:focus > :last-child, .the-tooltip:hover > :last-child {
+  opacity: 1;
+  -webkit-transition: 0.4s 0s;
+  -moz-transition: 0.4s 0s;
+  -ms-transition: 0.4s 0s;
+  -o-transition: 0.4s 0s;
+  transition: 0.4s 0s;
+  visibility: visible;
+}
+.the-tooltip > :last-child {
+  border: solid 1px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 12px;
+  line-height: 1.5;
+  opacity: 0;
+  padding: 10px 15px;
+  position: absolute;
+  -webkit-transition: 0.2s 0s;
+  -moz-transition: 0.2s 0s;
+  -ms-transition: 0.2s 0s;
+  -o-transition: 0.2s 0s;
+  transition: 0.2s 0s;
+  visibility: hidden;
+  width: 250px;
+  z-index: 999;
+}
+.the-tooltip > :last-child * {
+  max-width: 100%;
+}
+.the-tooltip > :last-child:after, .the-tooltip > :last-child:before {
+  border: solid 11px;
+  content: "";
+  display: block;
+  margin: 0 20px 0 20px;
+  position: absolute;
+}
+.the-tooltip.bottom > :last-child {
+  margin-top: 15px;
+  top: 100%;
+}
+.the-tooltip.bottom > :last-child:after {
+  margin-bottom: -1px;
+}
+.the-tooltip.bottom > :last-child:after, .the-tooltip.bottom > :last-child:before {
+  border-left-color: transparent !important;
+  border-right-color: transparent !important;
+  border-top-color: transparent !important;
+  bottom: 100%;
+}
+.the-tooltip.bottom > :last-child:before {
+  margin-bottom: 0px;
+}
+.the-tooltip.center > :last-child {
+  left: -125px;
+  margin-left: 50%;
+}
+.the-tooltip.center > :last-child:after, .the-tooltip.center > :last-child:before {
+  left: 50%;
+  margin-left: -10px;
+}
+.the-tooltip.left > :last-child {
+  left: 0;
+}
+.the-tooltip.left > :last-child:after, .the-tooltip.left > :last-child:before {
+  left: 0;
+}
+.the-tooltip.right > :last-child {
+  right: 0;
+}
+.the-tooltip.right > :last-child:after, .the-tooltip.right > :last-child:before {
+  right: 0;
+}
+.the-tooltip.top > :last-child {
+  bottom: 100%;
+  margin-bottom: 15px;
+}
+.the-tooltip.top > :last-child:after {
+  margin-top: -1px;
+}
+.the-tooltip.top > :last-child:after, .the-tooltip.top > :last-child:before {
+  border-bottom-color: transparent !important;
+  border-left-color: transparent !important;
+  border-right-color: transparent !important;
+  top: 100%;
+}
+.the-tooltip.top > :last-child:before {
+  margin-top: 0px;
+}
+
+/*********/
+.the-tooltip.middle > :last-child {
+  bottom: 50%;
+  margin-bottom: -17px;
+  margin-left: 33px;
+}
+.the-tooltip.middle > :last-child:after {
+  margin-top: -1px;
+}
+
+.the-tooltip.middle > :last-child:after, .the-tooltip.middle > :last-child:before {
+  border-top-color: transparent !important;
+  border-bottom-color: transparent !important;
+  border-left-color: transparent !important;
+  /*border-right-color: transparent !important;*/
+  top: 50%;
+  margin-top: -10px;
+  left: -38px;
+}
+.the-tooltip.middle > :last-child:before {
+  margin-top: -10px;
+}
+/*********/
+
+.the-tooltip.auto-width > :last-child {
+  white-space: nowrap;
+  width: auto;
+}
+.the-tooltip.full-width > :last-child {
+  left: 0;
+  margin-left: 0;
+  width: 100%;
+}
+.the-tooltip.black > :last-child {
+  background-color: #000000;
+  border-color: #000000;
+  color: #ffffff;
+}
+.the-tooltip.black > :last-child:after {
+  border-color: #000;
+}
+.the-tooltip.black > :last-child:before {
+  border-color: #000;
+}
+.the-tooltip.black > :last-child {
+}
