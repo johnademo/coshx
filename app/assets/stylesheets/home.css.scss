@@ -39,6 +39,14 @@
   }
 }
 
+a.the-tooltip span {
+  visibility: hidden;
+}
+
+.qtip {
+  font: 12px 'PT Sans', sans-serif;
+}
+
 section#blueprint-image {
   @include w960;
 
